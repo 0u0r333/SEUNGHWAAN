@@ -1,0 +1,1688 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+/* 
+.nova-mono-regular {
+  font-family: "Nova Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.noto-sans kr-<uniquifier> {
+font-family: "Noto Sans KR", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+}
+
+.abel-regular {
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ */
+
+html{
+    font-family: "Noto Sans KR", sans-serif;
+    color:#333;
+}
+
+.text_hidden{
+    display: none;
+}
+
+header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 100px;
+    border-bottom: 1px solid #cacaca;
+    backdrop-filter : blur(5px);
+    background-color: hsla(0, 0%, 80%, 0.132);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+header h1{
+    font-family: "Nova Mono", monospace;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color:#2B6B99;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Abel", sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    color:#555555;
+}
+
+header ul li{
+    width: 100px;
+}
+header ul li:hover{
+    color:#2B6B99;
+}
+
+.sec1{
+    width: 1100px;
+    margin:0 auto;
+    margin : 0 auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec1 figure img{
+    max-width: 350px;
+}
+
+.sec1 .right{
+    width: 655px;
+}
+
+.sec1 .right .title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    line-height: 150%;
+}
+
+.sec1 .right>p{
+    font-size: 1.2rem;
+    line-height: 200%;
+}
+
+
+.sec2{
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.sec2 .top{
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.sec2 .top>div{
+    width: 50%;
+    margin-bottom: 100px;
+    padding-left: 50px;
+}
+.sec2 .top h3{
+    font-family: "Nova Mono", monospace;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.sec2 .top p{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.sec2 .top .exper .exper_inner{
+    display: flex;
+    position: relative;
+}
+
+.sec2 .top .exper .exper_line {
+    margin-right: 20px;
+}
+
+.sec2 .top .exper .exper_line .line{
+    display: block;
+    width: 1px;
+    height: 240px;
+    background-color: #333;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.sec2 .top .exper .exper_line .dot{
+    display: block;
+    width: 8px; 
+    height: 8px;
+    border-radius: 100%;
+    background-color: #333;
+}
+.sec2 .top .exper .exper_line .dot1{
+    position: absolute;
+    top: 20px;
+    left: -3px;
+}
+.sec2 .top .exper .exper_line .dot2{
+    position: absolute;
+    top: 150px;
+    left: -3px;
+}
+
+.sec2 .top .exper .exper_con{
+    position: relative;
+    width: 100%;
+}
+
+.sec2 .top .exper .exper_con .takson{
+    position: absolute;
+    top: 13px;
+}
+
+.sec2 .top .exper .exper_con .sck{
+    position: absolute;
+    top: 143px;
+}
+
+.sec2 .top .skill ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 240px;
+}
+
+.sec2 .top .skill ul li{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.sec2 .top .skill ul li img{
+    width: 50px;
+}
+
+.sec2 .top .lic{
+    margin-left: 478px;
+}
+
+
+
+.sec2 .btm{
+    width: 100%;
+    height: 500px;
+    background-color: #F6F6F6;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.sec2 .btm .btm_inner{
+    display: flex;
+    align-items: center;
+}
+
+.sec2 .btm .btm_inner .item{
+    width: 380px;
+    height: 400px;
+    margin-right: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+}
+
+.sec2 .btm .btm_inner .item>p{
+    margin-top: 30px;
+    line-height: 180%;
+    font-size: 1.2rem;
+}
+
+.sec2 .btm .btm_inner .item .html_box>p{
+    width: 100px;
+    height: 100px;
+    background-color: #ffdddd;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+.sec2 .btm .btm_inner .item .css_box{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.sec2 .btm .btm_inner .css_box>p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.sec2 .btm .btm_inner .item .css_box .clover_box>span{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #DEEFCC;
+    border-radius: 60px;
+}
+.sec2 .btm .btm_inner .item .css_box .clover_box>span:nth-of-type(2){
+    right:0;
+}
+.sec2 .btm .btm_inner .item .css_box .clover_box>span:nth-of-type(3){
+    bottom: 0;
+}
+.sec2 .btm .btm_inner .item .css_box .clover_box>span:last-child{
+    right:0;
+    bottom: 0;
+}
+
+
+.sec2 .btm .btm_inner .item .java_box{
+    width: 100px;
+    height: 100px;
+    background-color: #F0DAEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    rotate: 45deg;
+}
+.sec2 .btm .btm_inner .java_box>p{
+    rotate: -45deg;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+
+
+
+.sec3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.sec3>h2{
+    font-family: "Nova Mono", monospace;
+    font-size: 3.33rem;
+    margin-bottom: 150px;
+}
+
+.sec3 .work_box{
+    display: flex;
+    width: 1100px;
+    margin-bottom: 100px;
+}
+.sec3 .work_box .script{
+    width: 25%;
+    margin-right: 5%;
+    margin-left: 15%;
+    margin-top: 220px;
+}
+.sec3 .work_box .script .script_title{
+    display: flex;
+    justify-content:space-between ;
+    margin-bottom: 20px;
+}
+.sec3 .work_box .script .script_title h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.sec3 .work_box .script .script_title p{
+    color:#999;
+    font-size: 0.8rem;
+    align-self: flex-end;
+    font-weight: 500;
+}
+.sec3 .work_box .script .script_title p:last-child{
+    margin-top: 10px;
+}
+
+
+.sec3 .work_box .docent{
+    line-height: 170%;
+}
+.sec3 .work_box .btn{
+    margin-top: 20px;
+    float: right;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color:#757575;
+    text-align: center;
+    line-height: 40px;
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+
+.sec3 .work_box figure{
+    width: 55%;
+}
+
+
+.sec3 .work4{
+    position: relative;
+}
+
+.sec3 .work4 .script .script_title .uiux{
+    position: absolute;
+    top: 185px;  
+    font-family: "Nova Mono", monospace;
+    font-size: 1.5rem;
+}
+
+
+
+.sec4{
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    margin-bottom: 200px;
+}
+.sec4 h2{
+    margin-bottom: 50px;
+    font-family: "Nova Mono", monospace;
+    font-size: 2rem;
+}
+
+.sec4 ul{
+    display: flex;
+}
+
+.sec4 ul li{
+    width: 170px;
+    margin-right: 15px;
+}
+.sec4 ul li:last-child{
+    margin-right: 0px;
+}
+
+.sec4 ul li figure{
+    margin-bottom: 20px;
+}
+.sec4 ul li h5{
+    margin-left: 5px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.sec4 ul li p{
+    margin-left: 5px;
+}
+
+
+footer{
+    width: 100%;
+    height: 650px;
+    padding-top: 50px;
+    background-color: #f9f9f9;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer_inner{
+    width: 1100px;
+}
+footer h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+footer .left{
+    display: flex;
+    float: left;
+    width: 55%;
+    height: 400px;
+    margin-right: 5%;
+}
+footer .left li{
+    margin-right: 10px;
+}
+footer .left li figure img{
+    border-radius: 60px;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+footer .left li p{
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 38px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #333;
+    border-radius: 40px;
+}
+footer .right{
+    float: right;
+    width: 40%;
+    height: 400px;
+}
+footer .right p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 180%;
+    margin-bottom: 95px;
+}
+footer .right h4{
+    font-family: "Nova Mono", monospace;
+    color:#999;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+footer .right .contact{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+footer .copy{
+    position: absolute;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 0.85rem;
+    bottom: 20px;
+}
+
+
+
+
+
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1200px)*/ 
+@media all and (min-width:1024px) and (max-width:1200px) { 
+.sec1{
+    width: 900px;
+    margin:0 auto;
+    margin : 0 auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec1 figure img{
+    max-width: 280px;
+}
+
+.sec1 .right{
+    width: 550px;
+}
+
+.sec1 .right .title{
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    line-height: 150%;
+}
+
+.sec1 .right>p{
+    font-size: 1rem;
+    line-height: 200%;
+}
+
+.sec2 .top{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.sec2 .top>div{
+    width: 50%;
+    margin-bottom: 100px;
+    padding-left: 100px;
+}
+.sec2 .top h3{
+    font-family: "Nova Mono", monospace;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.sec2 .top p{
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.sec2 .top .exper .exper_line .line{
+    display: block;
+    width: 1px;
+    height: 200px;
+    background-color: #333;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.sec2 .top .exper .exper_line .dot2{
+    position: absolute;
+    top: 130px;
+    left: -3px;
+}
+
+.sec2 .top .exper .exper_con .sck{
+    position: absolute;
+    top: 127px;
+}
+.sec2 .top .lic{
+    margin-left: 450px;
+}
+.sec2 .btm{
+    width: 100%;
+    height: 450px;
+    background-color: #F6F6F6;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.sec2 .btm .btm_inner .item{
+    width: 300px;
+    height: 350px;
+    margin-right: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+}
+.sec2 .btm .btm_inner .item>p{
+    margin-top: 30px;
+    line-height: 180%;
+    font-size: 1rem;
+}
+
+
+.sec3 .work_box{
+    display: flex;
+    width: 900px;
+    margin-bottom: 100px;
+}
+.sec3 .work_box .script{
+    width: 30%;
+    margin-right: 5%;
+    margin-left: 15%;
+    margin-top: 120px;
+}
+.sec3 .work_box .script .script_title{
+    display: flex;
+    justify-content:space-between ;
+    margin-bottom: 15px;
+}
+.sec3 .work_box .script .script_title h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.sec3 .work4 .script .script_title .uiux{
+    position: absolute;
+    top: 85px;  
+    font-family: "Nova Mono", monospace;
+    font-size: 1.5rem;
+}
+
+.sec4{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    margin-bottom: 200px;
+}
+.sec4 h2{
+    margin-bottom: 50px;
+    font-family: "Nova Mono", monospace;
+    font-size: 1.8rem;
+}
+.sec4 ul li p{
+    margin-left: 5px;
+    font-size: 0.85rem;
+}
+
+footer{
+    width: 100%;
+    height: 550px;
+    padding-top: 50px;
+    background-color: #f9f9f9;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .footer_inner{
+    width: 900px;
+}
+footer .left li figure img{
+    border-radius: 40px;
+    max-width: 160px;
+    margin-bottom: 20px;
+}
+footer .left li p{
+    font-size: 0.80rem;
+    text-align: center;
+    line-height: 33px;
+    width: 160px;
+    height: 35px;
+    border: 1px solid #333;
+    border-radius: 40px;
+}
+footer .right p{
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 180%;
+    margin-bottom: 50px;
+}
+
+
+
+} 
+
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) { 
+    header{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 50px;
+        border-bottom: 1px solid #cacaca;
+        backdrop-filter : blur(5px);
+        background-color: hsla(0, 0%, 80%, 0.132);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    header h1{
+        font-family: "Nova Mono", monospace;
+        font-weight: 400;
+        font-size: 1.3rem;
+        color:#2B6B99;
+    }
+    header ul{
+        display: flex;
+        justify-content: space-between;
+        font-family: "Abel", sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        color:#555555;
+    }
+    header ul li{
+        width: 80px;
+    }
+
+    .sec1{
+        width: 700px;
+        margin:0 auto;
+        margin : 0 auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sec1 figure img{
+        max-width: 200px;
+    }
+    
+    .sec1 .right{
+        width: 440px;
+    }
+    
+    .sec1 .right .title{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 50px;
+        line-height: 150%;
+    }
+    
+    .sec1 .right>p{
+        font-size: 0.85rem;
+        line-height: 200%;
+    }
+    
+    .sec2 .top{
+        width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .sec2 .top>div{
+        width: 50%;
+        margin-bottom: 50px;
+        padding-left: 50px;
+    }
+    .sec2 .top h3{
+        font-family: "Nova Mono", monospace;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    .sec2 .top p{
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+    
+    .sec2 .top .exper .exper_line .line{
+        display: block;
+        width: 1px;
+        height: 180px;
+        background-color: #333;
+        position: absolute;
+        top: 0; left: 0;
+    }
+    
+    .sec2 .top .exper .exper_line .dot2{
+        position: absolute;
+        top: 130px;
+        left: -3px;
+    }
+    
+    .sec2 .top .exper .exper_con .sck{
+        position: absolute;
+        top: 127px;
+    }
+    .sec2 .top .lic{
+        margin-left: 350px;
+    }
+    
+    .sec2 .btm{
+        width: 100%;
+        height: 400px;
+        background-color: #F6F6F6;
+        padding: 0 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+    .sec2 .btm .btm_inner .item{
+        width: 200px;
+        height: 300px;
+        margin-right: 50;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+    }
+    .sec2 .btm .btm_inner .item>p{
+        margin-top: 30px;
+        line-height: 180%;
+        font-size: 0.85rem;
+    }
+    
+    .sec2 .btm .btm_inner .item .html_box>p{
+        width: 80px;
+        height: 80px;
+        background-color: #ffdddd;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    
+    .sec2 .btm .btm_inner .item .css_box{
+        width: 80px;
+        height: 80px;
+        position: relative;
+    }
+    .sec2 .btm .btm_inner .css_box>p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 30;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    
+    .sec2 .btm .btm_inner .item .css_box .clover_box>span{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: #DEEFCC;
+        border-radius: 50px;
+    }
+
+
+    .sec3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .sec3 .work_box{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 700px;
+        margin-bottom: 100px;
+    }
+    .sec3 .work_box .script{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .sec3 .work_box .script .script_title{
+        display: flex;
+        justify-content:space-between ;
+        margin-bottom: 15px;
+    }
+    .sec3 .work_box .script .script_title h3{
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    .sec3 .work4 .script .script_title .uiux{
+        position: absolute;
+        top: 520px;  
+        font-family: "Nova Mono", monospace;
+        font-size: 1.2rem;
+    }
+    
+    .sec2 .btm .btm_inner .item .java_box{
+        width: 80px;
+        height: 80px;
+        background-color: #F0DAEE;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        rotate: 45deg;
+    }
+    .sec2 .btm .btm_inner .java_box>p{
+        rotate: -45deg;
+        font-weight: 600;
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+
+    .sec3 .work_box figure{
+        width: 100%;
+    }
+
+
+
+    .sec4{
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        margin:0 auto;
+        margin-bottom: 200px;
+    }
+    .sec4 h2{
+        margin-bottom: 50px;
+        font-family: "Nova Mono", monospace;
+        font-size: 1.8rem;
+    }
+    .sec4 ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .sec4 ul li{
+        width: 200px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .sec4 ul li p{
+        margin-left: 5px;
+        font-size: 0.9rem;
+    }
+    
+    footer{
+        width: 100%;
+        height: 800px;
+        background-color: #f9f9f9;
+        position: relative;
+    }
+    footer .footer_inner{
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+    }
+    footer .left{
+        display: flex;
+        float: left;
+        width: 100%;
+        height: 300px;
+        margin-right: 5%;
+    }
+    footer .left li figure img{
+        border-radius: 40px;
+        max-width: 180px;
+        margin-bottom: 20px;
+    }
+    footer .left li p{
+        font-size: 0.85rem;
+        text-align: center;
+        line-height: 33px;
+        width: 180px;
+        height: 35px;
+        border: 1px solid #333;
+        border-radius: 40px;
+    }
+    footer .right{
+        float: right;
+        width: 100%;
+        height: 300px;
+    }
+    footer .right p{
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 180%;
+        margin-bottom: 50px;
+    }
+    
+} 
+
+/* 모바일 가로, 테블릿 세로 (해상도 400px ~ 767px)*/ 
+@media all and (min-width:400px) and (max-width:767px) {
+    header{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 30px;
+        border-bottom: 1px solid #cacaca;
+        backdrop-filter : blur(5px);
+        background-color: hsla(0, 0%, 80%, 0.132);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    header h1{
+        font-family: "Nova Mono", monospace;
+        font-weight: 400;
+        font-size: 1.3rem;
+        color:#2B6B99;
+    }
+    header ul{
+        display: flex;
+        justify-content: space-between;
+        font-family: "Abel", sans-serif;
+        font-size: 0.9rem;
+        text-align: center;
+        color:#555555;
+    }
+    header ul li{
+        width: 65px;
+    }
+    header span{
+        display: none;
+    }
+
+    .sec1{
+        width: 360px;
+        margin:0 auto;
+        margin : 0 auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sec1 figure img{
+        max-width: 200px;
+        margin-bottom: 50px;
+    }
+    
+    .sec1 .right{
+        width: 360px;
+    }
+    
+    .sec1 .right .title{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 50px;
+        line-height: 150%;
+    }
+    
+    .sec1 .right>p{
+        font-size: 0.85rem;
+        line-height: 200%;
+    }
+    
+    .sec2 .top{
+        width: 360px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .sec2 .top>div{
+        width: 80%;
+        margin-bottom: 50px;
+        padding-left: 0px;
+    }
+    .sec2 .top h3{
+        font-family: "Nova Mono", monospace;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    .sec2 .top p{
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+    
+    .sec2 .top .exper .exper_line .line{
+        display: block;
+        width: 1px;
+        height: 150px;
+        background-color: #333;
+        position: absolute;
+        top: 0; left: 0;
+    }
+    
+    .sec2 .top .exper .exper_line .dot2{
+        position: absolute;
+        top: 100px;
+        left: -3px;
+    }
+    
+    .sec2 .top .exper .exper_con .sck{
+        position: absolute;
+        top: 97px;
+    }
+
+    .sec2 .top .exper{
+        height: 200px;
+        margin-bottom: 50px;
+    }
+    .sec2 .top .lic{
+        margin-left: 0px;
+    }
+    
+    .sec2 .btm{
+        width: 100%;
+        height: 900px;
+        background-color: #F6F6F6;
+        padding: 0 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+    .sec2 .btm .btm_inner{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .sec2 .btm .btm_inner .item{
+        width: 100%;
+        height: 250px;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        position: relative;
+    }
+    .sec2 .btm .btm_inner .item>p{
+        margin-top: 30px;
+        line-height: 180%;
+        font-size: 0.85rem;
+    }
+    
+    .sec2 .btm .btm_inner .item .html_box>p{
+        width: 80px;
+        height: 80px;
+        background-color: #ffdddd;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    
+    .sec2 .btm .btm_inner .item .css_box{
+        width: 80px;
+        height: 80px;
+        position: relative;
+    }
+    .sec2 .btm .btm_inner .css_box>p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 30;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    
+    .sec2 .btm .btm_inner .item .css_box .clover_box>span{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: #DEEFCC;
+        border-radius: 50px;
+    }
+
+    .sec2 .btm .btm_inner .item .java_box{
+        width: 80px;
+        height: 80px;
+        background-color: #F0DAEE;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        rotate: 45deg;
+    }
+    .sec2 .btm .btm_inner .java_box>p{
+        rotate: -45deg;
+        font-weight: 600;
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+
+
+
+    .sec3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .sec3>h2{
+        font-family: "Nova Mono", monospace;
+        font-size: 2.5rem;
+        margin-bottom: 100px;
+    }
+    .sec3 .work_box{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 360px;
+        margin-bottom: 100px;
+    }
+    .sec3 .work_box .script{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .sec3 .work_box .script .script_title{
+        display: flex;
+        justify-content:space-between ;
+        margin-bottom: 15px;
+    }
+    .sec3 .work_box .script .script_title h3{
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    .sec3 .work_box .docent{
+        line-height: 170%;
+        font-size: 0.9rem;
+    }
+    .sec3 .work4 .script .script_title .uiux{
+        position: absolute;
+        top: 280px;  
+        font-family: "Nova Mono", monospace;
+        font-size: 1.2rem;
+    }
+    .sec3 .work_box figure{
+        width: 100%;
+    }
+
+
+
+    .sec4{
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        margin:0 auto;
+        margin-bottom: 150px;
+    }
+    .sec4 h2{
+        margin-bottom: 50px;
+        font-family: "Nova Mono", monospace;
+        font-size: 1.7rem;
+    }
+    .sec4 ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .sec4 ul li{
+        width: 170px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .sec4 ul li p{
+        margin-left: 5px;
+        font-size: 0.9rem;
+    }
+    
+    footer{
+        width: 100%;
+        height: 800px;
+        background-color: #f9f9f9;
+        position: relative;
+    }
+    footer h3{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+    footer .footer_inner{
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    footer .left{
+        display: flex;
+        float: none;
+        width: 100%;
+        height: 250px;
+        margin-right: 0;
+    }
+    footer .left li figure img{
+        border-radius: 30px;
+        max-width: 120px;
+        margin-bottom: 20px;
+    }
+    footer .left li p{
+        font-size: 0.6rem;
+        text-align: center;
+        line-height: 33px;
+        width: 120px;
+        height: 35px;
+        border: 1px solid #333;
+        border-radius: 40px;
+    }
+    footer .right{
+        float: right;
+        width: 100%;
+        height: 300px;
+    }
+    footer .right p{
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 180%;
+        margin-bottom: 50px;
+    }
+    footer .copy{
+        width: 360px;
+        text-align: center;
+        position: absolute;
+        left : 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 600;
+        font-size: 0.6rem;
+        bottom: 20px;
+    }
+    
+    
+    
+    
+} 
+
+/* 모바일 세로 (해상도 ~ 399px)*/ 
+@media all and (max-width:399px) {
+    header{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 30px;
+        border-bottom: 1px solid #cacaca;
+        backdrop-filter : blur(5px);
+        background-color: hsla(0, 0%, 80%, 0.132);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    header h1{
+        font-family: "Nova Mono", monospace;
+        font-weight: 400;
+        font-size: 1.2rem;
+        color:#2B6B99;
+    }
+    header ul{
+        display: flex;
+        justify-content: space-between;
+        font-family: "Abel", sans-serif;
+        font-size: 0.9rem;
+        text-align: center;
+        color:#555555;
+    }
+    header ul li{
+        width: 65px;
+    }
+    header span{
+        display: none;
+    }
+
+    .sec1{
+        width: 300px;
+        margin:0 auto;
+        margin : 0 auto;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sec1 figure img{
+        max-width: 200px;
+        margin-bottom: 50px;
+    }
+    
+    .sec1 .right{
+        width: 300px;
+    }
+    
+    .sec1 .right .title{
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        line-height: 150%;
+    }
+    
+    .sec1 .right>p{
+        font-size: 0.85rem;
+        line-height: 200%;
+    }
+    
+   
+    .sec2 .top{
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 20px;
+        margin-bottom: 50px;
+    }
+    .sec2 .top>div{
+        width: 100%;
+        margin-bottom: 50px;
+        padding-left: 0px;
+    }
+    .sec2 .top h3{
+        font-family: "Nova Mono", monospace;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    
+    .sec2 .top p{
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+    
+    .sec2 .top .exper .exper_line .line{
+        display: block;
+        width: 1px;
+        height: 150px;
+        background-color: #333;
+        position: absolute;
+        top: 0; left: 0;
+    }
+    
+    .sec2 .top .exper .exper_line .dot2{
+        position: absolute;
+        top: 100px;
+        left: -3px;
+    }
+    
+    .sec2 .top .exper .exper_con .sck{
+        position: absolute;
+        top: 97px;
+    }
+
+    .sec2 .top .exper{
+        height: 200px;
+        margin-bottom: 50px;
+    }
+    .sec2 .top .lic{
+        margin-left: 0px;
+    }
+    
+    .sec2 .btm{
+        width: 100%;
+        height: 900px;
+        background-color: #F6F6F6;
+        padding: 0 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+    .sec2 .btm .btm_inner{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .sec2 .btm .btm_inner .item{
+        width: 100%;
+        height: 210px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        position: relative;
+    }
+    .sec2 .btm .btm_inner .item>p{
+        margin-top: 30px;
+        line-height: 180%;
+        font-size: 0.85rem;
+    }
+    
+    .sec2 .btm .btm_inner .item .html_box>p{
+        width: 80px;
+        height: 80px;
+        background-color: #ffdddd;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    
+    .sec2 .btm .btm_inner .item .css_box{
+        width: 80px;
+        height: 80px;
+        position: relative;
+    }
+    .sec2 .btm .btm_inner .css_box>p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 30;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    
+    .sec2 .btm .btm_inner .item .css_box .clover_box>span{
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        background-color: #DEEFCC;
+        border-radius: 50px;
+    }
+
+    .sec2 .btm .btm_inner .item .java_box{
+        width: 80px;
+        height: 80px;
+        background-color: #F0DAEE;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        rotate: 45deg;
+    }
+    .sec2 .btm .btm_inner .java_box>p{
+        rotate: -45deg;
+        font-weight: 600;
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+
+
+
+    .sec3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .sec3>h2{
+        font-family: "Nova Mono", monospace;
+        font-size: 2.2rem;
+        margin-bottom: 100px;
+    }
+    .sec3 .work_box{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 300px;
+        margin-bottom: 100px;
+    }
+    .sec3 .work_box .script{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .sec3 .work_box .script .script_title{
+        display: flex;
+        justify-content:space-between ;
+        margin-bottom: 15px;
+    }
+    .sec3 .work_box .script .script_title h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .sec3 .work_box .docent{
+        line-height: 170%;
+        font-size: 0.8rem;
+    }
+    .sec3 .work4 .script .script_title .uiux{
+        position: absolute;
+        top: 235px;  
+        font-family: "Nova Mono", monospace;
+        font-size: 1.2rem;
+    }
+    .sec3 .work_box figure{
+        width: 100%;
+    }
+
+
+
+    .sec4{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        margin:0 auto;
+        margin-bottom: 150px;
+    }
+    .sec4 h2{
+        margin-bottom: 50px;
+        font-family: "Nova Mono", monospace;
+        font-size: 1.2rem;
+    }
+    .sec4 ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .sec4 ul li{
+        width: 140px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .sec4 ul li p{
+        margin-left: 5px;
+        font-size: 0.85rem;
+    }
+    
+    footer{
+        width: 100%;
+        height: 1000px;
+        background-color: #f9f9f9;
+        position: relative;
+    }
+    footer h3{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+    footer .footer_inner{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    footer .left{
+        display: flex;
+        flex-wrap: wrap;
+        float: none;
+        width: 100%;
+        height: 450px;
+        margin-right: 0;
+    }
+    footer .left li{
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    footer .left li figure img{
+        border-radius: 30px;
+        max-width: 140px;
+        margin-bottom: 10px;
+    }
+    footer .left li p{
+        font-size: 0.6rem;
+        text-align: center;
+        line-height: 28px;
+        width: 140px;
+        height: 30px;
+        border: 1px solid #333;
+        border-radius: 40px;
+    }
+    footer .right{
+        float: right;
+        width: 100%;
+        height: 300px;
+    }
+    footer .right p{
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 180%;
+        margin-bottom: 50px;
+    }
+    footer .copy{
+        width: 360px;
+        text-align: center;
+        position: absolute;
+        left : 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 600;
+        font-size: 0.6rem;
+        bottom: 20px;
+    }
+    
+    
+}
