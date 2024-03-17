@@ -40,8 +40,8 @@ header{
     align-items: center;
     padding:0 100px;
     border-bottom: 1px solid #cacaca;
+    background-color: hsla(0, 0%, 80%, 0.788);
     backdrop-filter : blur(5px);
-    background-color: hsla(0, 0%, 80%, 0.132);
     position: fixed;
     top: 0;
     left: 0;
